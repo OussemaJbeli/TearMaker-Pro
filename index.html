@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TearMaker-Pro</title>
+  <link rel="stylesheet" type="text/css" href="/loader.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div id="loading-bg">
+      <div class="loading-logo">
+        <!-- SVG Logo -->
+        <svg width="86" height="48" viewBox="0 0 250 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Main 'T' Shape -->
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M50 0 H200 V30 H150 V196 H100 V30 H50 Z" fill="var(--initial-loader-color)"/>
+          <!-- Additional Details or Shadows -->
+          <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd" d="M50 0 H200 V30 H150 V196 H100 V30 H50 Z" fill="var(--initial-loader-color)" />
+          <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M50 0 H200 V30 H150 V196 H100 V30 H50 Z" fill="var(--initial-loader-color)" />
+        </svg>
+        
+      </div>
+      <div class="loading">
+        <div class="effect-1 effects"></div>
+        <div class="effect-2 effects"></div>
+        <div class="effect-3 effects"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+  <script>
+    const loaderColor = localStorage.getItem('materio-initial-loader-bg') || '#fff'
+    const primaryColor = localStorage.getItem('materio-initial-loader-color') || '#59f738'
+
+    if (loaderColor)
+      document.documentElement.style.setProperty('--initial-loader-bg', loaderColor)
+
+    if (primaryColor)
+      document.documentElement.style.setProperty('--initial-loader-color', primaryColor)
+  </script>
+</body>
+
 </html>

@@ -1,0 +1,7 @@
+<svg width="1.875em" height="1.5em" viewBox="0 0 250 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main 'T' Shape -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M50 0 H200 V30 H150 V196 H100 V30 H50 Z" fill="#59f738"/>
+  <!-- Additional Details or Shadows -->
+  <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd" d="M50 0 H200 V30 H150 V196 H100 V30 H50 Z" fill="white" />
+  <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M50 0 H200 V30 H150 V196 H100 V30 H50 Z" fill="black" />
+</svg>
